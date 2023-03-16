@@ -11,9 +11,9 @@ def exchange(n) :
     n4 = n // 10
     print("10원 동전의 개수 : ", n4)
 
-def get_integer() :
-    change = int(input("동전으로 교환하고자 하는 금액은? "))
+def get_integer(prompt) :
+    change = int(input(prompt))
     return change
 
-n = get_integer()
+n = get_integer("동전으로 교환하고자 하는 금액은? ")
 exchange(n)
